@@ -40,6 +40,7 @@ function Form() {
 
   return (
     <Fragment>
+      <h1>Fill the form below to generate your resume!!</h1>
       <div className="container py-5">
         <form
           onSubmit={handleSubmit(submitHandler)}
