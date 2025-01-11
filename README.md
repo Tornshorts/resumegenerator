@@ -9,8 +9,7 @@ This is a Resume Generator web application that allows users to generate customi
   - [Backend Configuration](#backend-configuration)
 - [Environment Variables](#environment-variables)
 - [Running the Application](#running-the-application)
-- [Contributing](#contributing)
-- [License](#license)
+
 
 ---
 
