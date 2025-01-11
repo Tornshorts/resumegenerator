@@ -26,7 +26,7 @@ Before you begin, ensure you have the following installed on your machine:
 This project requires an external API to generate the resume. You will need to obtain an API key from Google AI Studio.
 To get your API key from Google AI Studio:
 
-- Go to Google AI Studio API Key Page https://aistudio.google.com/app/apikeyand sign in with your Google account.
+- Go to Google AI Studio API Key Page https://aistudio.google.com/app/apikey and sign in with your Google account.
 - Create or select a project.
 - Click Create Credentials > API Key.
 - Copy the generated API key.
