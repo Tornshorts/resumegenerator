@@ -1,14 +1,19 @@
-# How to configure 
-git clone 
+# Frontend Configuration
 
-In your terminal 
-  cd ResumeGenerator
-  npm i
-  npm run dev
-Go to backend folder to configure it 
- cd backend
- npm i
- create a .env file and paste 
- API_KEY = YOUR API KEY
+After cloning the repository, navigate to the frontend directory and install the required dependencies:
 
- 
+```bash
+cd ResumeGenerator
+
+npm install
+```
+
+This will install all the necessary packages listed in the `package.json` file.
+
+## Running the Application
+
+To run the application, use the following command:
+
+```bash
+npm run dev
+```

@@ -272,6 +272,27 @@ function Form() {
             <pre className="bg-light p-3">{generatedResume}</pre>
           </div>
         )}
+
+        {generatedResume && (
+          <div className="mt-4">
+            <h4>Generated Resume</h4>
+            <pre className="bg-light p-3">{generatedResume}</pre>
+            <button
+              className="btn btn-success mt-2"
+              onClick={() => {
+                const blob = new Blob([generatedResume], {
+                  type: "text/plain",
+                });
+                const link = document.createElement("a");
+                link.href = URL.createObjectURL(blob);
+                link.download = "resume.txt";
+                link.click();
+              }}
+            >
+              Download Resume
+            </button>
+          </div>
+        )}
       </div>
     </Fragment>
   );
