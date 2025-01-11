@@ -3,13 +3,13 @@
 This is a Resume Generator web application that allows users to generate customizable resumes. The application consists of a frontend and a backend, and you need to configure both to get it up and running locally.
 
 ## Table of Contents
+
 - [Prerequisites](#prerequisites)
 - [Installation](#installation)
   - [Frontend Configuration](#frontend-configuration)
   - [Backend Configuration](#backend-configuration)
 - [Environment Variables](#environment-variables)
 - [Running the Application](#running-the-application)
-
 
 ---
 
@@ -22,7 +22,14 @@ Before you begin, ensure you have the following installed on your machine:
 - [Git](https://git-scm.com/)
 
 ### API Key
-This project requires an external API to fetch some data. You will need to obtain an API key from the respective service provider to configure the backend.
+
+This project requires an external API to generate the resume. You will need to obtain an API key from Google AI Studio.
+To get your API key from Google AI Studio:
+
+- Go to Google AI Studio API Key Page https://aistudio.google.com/app/apikeyand sign in with your Google account.
+- Create or select a project.
+- Click Create Credentials > API Key.
+- Copy the generated API key.
 
 ---
 
@@ -60,8 +67,9 @@ Create a file named `.env` in the `backend` directory and add the required envir
 API_KEY=your_api_key_here
 ```
 
-Ensure that the `.env` file is listed in the `.gitignore` file to prevent it from being committed to version control.
+Paste the API KEY from google above
 
+Ensure that the `.env` file is listed in the `.gitignore` file to prevent it from being committed to version control.
 
 # Frontend Configuration
 
@@ -77,8 +85,16 @@ This will install all the necessary packages listed in the `package.json` file.
 
 ## Running the Application
 
-To run the application, use the following command:
+Start the backend server first (Terminal 1):
 
 ```bash
+cd backend
+node server.js
+```
+
+Start the frontend server in a new terminal (Terminal 2):
+
+```bash
+cd ResumeGenerator
 npm run dev
 ```
